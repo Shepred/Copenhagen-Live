@@ -1,0 +1,20 @@
+
+
+/*===================================================================================*/
+/*	CUSTOM CSS STYLES
+/*===================================================================================*/
+
+/* Insert your own styles in here! */
+.white {
+	color: #fff;
+}
+.marginbottom0 {
+	margin-bottom: 0px;
+}
+.paddingright0 {
+	padding-right: 0px !important;
+}
+.alert {
+	border-radius: 0px !important;
+	margin-bottom: 0px !important;
+}
