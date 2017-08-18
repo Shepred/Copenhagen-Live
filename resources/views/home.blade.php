@@ -63,10 +63,8 @@
                     
                 </div><!-- /.owl-carousel -->
             </section>
-
             <section id="information">
                 <div class="container inner">
-                    
                     <div class="row">
                         
                         <div class="col-sm-6 inner-right-xs text-right aos-init aos-animate" data-aos="fade-up">

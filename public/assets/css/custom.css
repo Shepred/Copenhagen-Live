@@ -18,3 +18,11 @@
 	border-radius: 0px !important;
 	margin-bottom: 0px !important;
 }
+.table {
+	margin-bottom: 0px !important;
+}
+.btn-danger {
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}

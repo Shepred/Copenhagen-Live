@@ -100,8 +100,11 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'sobt' => [
+            'required' => 'The scheduled off-block time field is required.',
+        ],
+        'callsign' => [
+            'unique' => 'Callsign has already been booked. Please choose another.'
         ],
     ],
 

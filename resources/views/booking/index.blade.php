@@ -40,15 +40,40 @@
                                 <div class="panel panel-default">             
                                     <div class="panel-heading text-center">
                                         <h4 class="panel-title">
-                                            <a class="panel-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#content2">
+                                            <a class="panel-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#existingBookings">
                                                 <span>View Existing Bookings</span>
                                             </a>
                                         </h4>
                                     </div><!-- /.panel-heading -->
                                     
-                                    <div id="content2" class="panel-collapse collapse">
+                                    <div id="existingBookings" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes tumquam core posae volor remped modis volor. Dolorem qui comlus temp dolupta oreprerum tibusam. Eumenis et consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Callsign</th>
+                                                        <th>Origin</th>
+                                                        <th>Destination</th>
+                                                        <th>Aircraft Type</th>
+                                                        <th>Scheduled Off-Block Time</th>
+                                                        <th>E-mail Address</th>
+                                                        <th>Remarks</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">SAS539</td>
+                                                        <td class="text-center">EKCH</td>
+                                                        <td class="text-center">EGCC</td>
+                                                        <td class="text-center">A319</td>
+                                                        <td class="text-center">15:45Z</td>
+                                                        <td>random.email@email.com</td>
+                                                        <td>Y'all want some remarks?</td>
+                                                        <td class="text-center"><a href="{{ url('/booking/edit') }}"><i class="icon-edit"></i></a>&nbsp;<a data-toggle="modal" href="#modal-confirmation"><i class="icon-cancel-1"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div><!-- /.panel-body -->
                                     </div><!-- /.content -->
                                     
@@ -230,81 +255,49 @@
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section>
-            <div class="modal fade" id="createBooking" tabindex="-1" role="dialog" aria-labelledby="createBooking" aria-hidden="true">
+            <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="modal-confirmation" aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
                         
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-                            <h4 class="modal-title" id="createBooking">Create a new booking</h4>
+                            <h4 class="modal-title" id="modal-confirmation">Are you sure?</h4>
                         </div><!-- /.modal-header -->
                         
                         <!-- ============================================================= MODAL CONTENT ============================================================= -->
                         
                         <div class="modal-body">
                             
-                            <!-- ============================================================= SECTION – PORTFOLIO POST ============================================================= -->
+                            <!-- ============================================================= SECTION – HERO ============================================================= -->
                             
-                            <section id="portfolio-post">
-                                <div class="container inner-top-xs inner-bottom">
-                                    
+                            <section>
+                                <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <form method="POST" action="/booking">
-                                                <label for="callsign">Callsign</label>
-                                                <input type="text" class="form-control" name="callsign" id="callsign"/>
-
-                                                <label for="destination">Destination</label>
-                                                <input type="text" class="form-control" name="destination" id="destination"/>
-
-                                                <label for="aircraft">Aircraft Type</label>
-                                                <input type="text" class="form-control" name="aircraft" id="aircraft"/>
-
-                                                <label for="sobt">Scheduled Off-Block Time</label>
-                                                <input type="text" class="form-control" name="sobt" id="sobt"/>
-
-                                                <label for="email">E-mail Address</label>
-                                                <input type="email" class="form-control" name="email" id="email"/>
-
-                                                <label for="remarks">Remarks</label>
-                                                <textarea class="form-control" name="remarks" id="remarks"></textarea>
-                                            </form>
-                                        </div><!-- /.col -->
-                                    </div><!-- /.row -->
-                                    
-                                    <div class="row inner-top-xs reset-xs">
-                                        
-                                        <div class="col-sm-7 inner-top-xs inner-right-xs">
-                                            <header>
-                                                <h2>Service information</h2>
-                                                <p class="text-normal">Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam. Eumenis etus consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
-                                                <p class="text-normal">Soloreiur qui commolu ptatemp dolupta oreprerum tibusam emnis et consent accullignis. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae voloris remped modis doloreiur qui commolu dolupta oreprerum et consent.</p>
-                                            </header>
+                                        <div class="col-md-8 inner-top inner-bottom">
+                                        <p>Deleting your booking as an ireversible action that will free up your callsign for booking by others.</p>
+                                        <p>Once your booking has been deleted, the only way to get it back is by booking the callsign again.</p>
+                                        <p>If you wish to edit your booking, please use the edit function.</p>
                                         </div><!-- /.col -->
                                         
-                                        <div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-                                            <ul class="item-details">
-                                                <li class="date">June 12, 2015</li>
-                                                <li class="categories">Motion graphics</li>
-                                                <li class="client">Mobile company</li>
-                                                <li class="url"><a href="http://demo.fuviz.com/reen">demo.fuviz.com/reen</a></li>
-                                            </ul><!-- /.item-details -->
+                                        <div class="col-md-4 inner-top inner-bottom">
+                                            <h3>Booking Overview</h3>
+                                            <ul class="contacts">
+                                                <li><i class="icon-headphones contact"></i> SAS539</li>
+                                                <li><i class="icon-home-1 contact"></i> EKCH</li>
+                                                <li><i class="icon-paper-plane contact"></i> EGCC</li>
+                                                <li><i class="icon-flight-1 contact"></i> A319</a></li>
+                                            </ul><!-- /.contacts -->
                                         </div><!-- /.col -->
                                         
-                                    </div><!-- /.row -->
-                                    
+                                    </div><!-- ./row -->
                                 </div><!-- /.container -->
-                                
                             </section>
-                            
-                            <!-- ============================================================= SECTION – PORTFOLIO POST : END ============================================================= -->
-                            
                         </div><!-- /.modal-body -->
                         
                         <!-- ============================================================= MODAL CONTENT : END ============================================================= -->
                         
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">Save Booking</button>
+                            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">I understand - Delete my booking</button>
                         </div><!-- /.modal-footer -->
                         
                     </div><!-- /.modal-content -->
