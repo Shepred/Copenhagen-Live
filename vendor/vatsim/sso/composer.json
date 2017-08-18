@@ -1,0 +1,35 @@
+{
+    "name" : "vatsim/sso",
+    "description" : "VATSIM OAuth",
+    "keywords" : [
+        "vatsim",
+        "oauth",
+        "sso"
+    ],
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Kieran Hardern",
+            "email" : "kieran@hardern.net"
+        },
+        {
+            "name" : "Roy de Vos Burchart",
+            "email" : "dev@bonroyage.com",
+            "homepage" : "http://www.bonroyage.com"
+        }
+    ],
+    "support" : {
+        "issues" : "https://github.com/KHardern/VatsimSSO/issues",
+        "wiki" : "https://github.com/KHardern/VatsimSSO/wiki"
+    },
+    "require" : {
+        "php" : ">=5.4.0",
+        "bonroyage/oauth" : "1.*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Vatsim\\OAuth\\" : "src/"
+        }
+    },
+    "minimum-stability" : "dev"
+}
