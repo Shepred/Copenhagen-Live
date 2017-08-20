@@ -99,8 +99,9 @@
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 inner-top-xs inner-left-xs">
-                            <h2>wtb selling point :/</h2>
-                            <p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam emnis et consent accullignis.</p>
+                            <h2>Competitions!</h2>
+                            <p>The controller team behind this year's installment of Copenhagen Live have teamed up with numerous developers, and as such are proud to present a wide range of competitions throughout the day.</p>
+                            <a href="{{ url('/competitions') }}" class="txt-btn">More details here!</a>
                         </div><!-- /.col -->
                         
                     </div><!-- /.row -->

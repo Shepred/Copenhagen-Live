@@ -15,63 +15,61 @@
                     
                     <div class="row">
                         
-                        <div class="col-sm-4 inner-top">
-                            <form action="{{ url('/booking/create') }}">
-                                <input class="btn btn-default btn-lg btn-block" type="submit" value="Create a new booking" />
+                        <div class="col-sm-6 inner-top">
+                            <form action="{{ url('/booking/create/departure') }}">
+                                <input class="btn btn-default btn-lg btn-block" type="submit" value="Create a new departure booking" />
                             </form>
                         </div><!-- /.col -->
-                        
-                        <div class="col-sm-4 inner-top">
-                            <form action="{{ url('/booking/edit') }}">
-                                <input class="btn btn-default btn-lg btn-block" type="submit" value="Edit a booking" />
-                            </form>
-                        </div><!-- /.col -->
-                        
-                        <div class="col-sm-4 inner-top">
-                            <form action="{{ url('/booking/delete') }}">
-                                <input class="btn btn-default btn-lg btn-block" type="submit" value="Delete a booking" />
+                        <div class="col-sm-6 inner-top">
+                            <form action="{{ url('/booking/create/arrival') }}">
+                                <input class="btn btn-default btn-lg btn-block" type="submit" value="Create a new arrival booking" />
                             </form>
                         </div><!-- /.col -->
                         
                     </div><!-- /.row -->
+                    @if (count($departureBookings))
                     <div class="row">
                     <div class="col-sm-12 inner-top">
                             <div id="accordion" class="panel-group">
                                 <div class="panel panel-default">             
                                     <div class="panel-heading text-center">
                                         <h4 class="panel-title">
-                                            <a class="panel-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#existingBookings">
-                                                <span>View Existing Bookings</span>
+                                            <a class="panel-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#departureBookings">
+                                                <span>View Existing Departure Bookings</span>
                                             </a>
                                         </h4>
                                     </div><!-- /.panel-heading -->
                                     
-                                    <div id="existingBookings" class="panel-collapse collapse">
+                                    <div id="departureBookings" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <table class="table table-responsive">
                                                 <thead>
                                                     <tr>
-                                                        <th>Callsign</th>
-                                                        <th>Origin</th>
-                                                        <th>Destination</th>
-                                                        <th>Aircraft Type</th>
-                                                        <th>Scheduled Off-Block Time</th>
+                                                        <th class="text-center">Callsign</th>
+                                                        <th class="text-center">Origin</th>
+                                                        <th class="text-center">Destination</th>
+                                                        <th class="text-center">Aircraft Type</th>
+                                                        <th class="text-center">Scheduled Off-Block Time</th>
                                                         <th>E-mail Address</th>
                                                         <th>Remarks</th>
-                                                        <th>Action</th>
+                                                        <th class="text-center">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="text-center">SAS539</td>
-                                                        <td class="text-center">EKCH</td>
-                                                        <td class="text-center">EGCC</td>
-                                                        <td class="text-center">A319</td>
-                                                        <td class="text-center">15:45Z</td>
-                                                        <td>random.email@email.com</td>
-                                                        <td>Y'all want some remarks?</td>
-                                                        <td class="text-center"><a href="{{ url('/booking/edit') }}"><i class="icon-edit"></i></a>&nbsp;<a data-toggle="modal" href="#modal-confirmation"><i class="icon-cancel-1"></i></a></td>
+                                                    
+                                                        @foreach ($departureBookings as $booking)
+                                                        <tr>
+                                                        <td class="text-center">{{$booking->callsign}}</td>
+                                                        <td class="text-center">{{$booking->origin}}</td>
+                                                        <td class="text-center">{{$booking->destination}}</td>
+                                                        <td class="text-center">{{$booking->aircraft}}</td>
+                                                        <td class="text-center">{{$booking->sobt}} Z</td>
+                                                        <td>{{$booking->email}}</td>
+                                                        <td>{{$booking->remarks}}</td>
+                                                        <td class="text-center"><a href="{{ route('booking.delete', $booking->callsign) }}"><i class="icon-cancel-1"></i></a></td>
                                                     </tr>
+                                                    @endforeach
+                                                    
                                                 </tbody>
                                             </table>
                                         </div><!-- /.panel-body -->
@@ -81,6 +79,60 @@
                             </div><!-- /.accordion -->
                         </div><!-- /.col -->
                     </div>
+                    @endif
+                    @if (count($arrivalBookings))
+                    <div class="row">
+                    <div class="col-sm-12 inner-top">
+                            <div id="accordion" class="panel-group">
+                                <div class="panel panel-default">             
+                                    <div class="panel-heading text-center">
+                                        <h4 class="panel-title">
+                                            <a class="panel-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#arrivalBookings">
+                                                <span>View Existing Arrival Bookings</span>
+                                            </a>
+                                        </h4>
+                                    </div><!-- /.panel-heading -->
+                                    
+                                    <div id="arrivalBookings" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">Callsign</th>
+                                                        <th class="text-center">Origin</th>
+                                                        <th class="text-center">Destination</th>
+                                                        <th class="text-center">Aircraft Type</th>
+                                                        <th class="text-center">Scheduled Time of Arrival</th>
+                                                        <th>E-mail Address</th>
+                                                        <th>Remarks</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                        @foreach ($arrivalBookings as $booking)
+                                                        <tr>
+                                                        <td class="text-center">{{$booking->callsign}}</td>
+                                                        <td class="text-center">{{$booking->origin}}</td>
+                                                        <td class="text-center">{{$booking->destination}}</td>
+                                                        <td class="text-center">{{$booking->aircraft}}</td>
+                                                        <td class="text-center">{{$booking->sta}} Z</td>
+                                                        <td>{{$booking->email}}</td>
+                                                        <td>{{$booking->remarks}}</td>
+                                                        <td class="text-center"><a href="{{ route('booking.delete', $booking->callsign) }}"><i class="icon-cancel-1"></i></a></td>
+                                                    </tr>
+                                                    @endforeach
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div><!-- /.panel-body -->
+                                    </div><!-- /.content -->
+                                    
+                                </div><!-- /.panel -->
+                            </div><!-- /.accordion -->
+                        </div><!-- /.col -->
+                    </div>
+                    @endif
                 </div>
             </section>
             <section id="inspiration">
@@ -255,53 +307,5 @@
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section>
-            <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="modal-confirmation" aria-hidden="true">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                        
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-                            <h4 class="modal-title" id="modal-confirmation">Are you sure?</h4>
-                        </div><!-- /.modal-header -->
-                        
-                        <!-- ============================================================= MODAL CONTENT ============================================================= -->
-                        
-                        <div class="modal-body">
-                            
-                            <!-- ============================================================= SECTION – HERO ============================================================= -->
-                            
-                            <section>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-8 inner-top inner-bottom">
-                                        <p>Deleting your booking as an ireversible action that will free up your callsign for booking by others.</p>
-                                        <p>Once your booking has been deleted, the only way to get it back is by booking the callsign again.</p>
-                                        <p>If you wish to edit your booking, please use the edit function.</p>
-                                        </div><!-- /.col -->
-                                        
-                                        <div class="col-md-4 inner-top inner-bottom">
-                                            <h3>Booking Overview</h3>
-                                            <ul class="contacts">
-                                                <li><i class="icon-headphones contact"></i> SAS539</li>
-                                                <li><i class="icon-home-1 contact"></i> EKCH</li>
-                                                <li><i class="icon-paper-plane contact"></i> EGCC</li>
-                                                <li><i class="icon-flight-1 contact"></i> A319</a></li>
-                                            </ul><!-- /.contacts -->
-                                        </div><!-- /.col -->
-                                        
-                                    </div><!-- ./row -->
-                                </div><!-- /.container -->
-                            </section>
-                        </div><!-- /.modal-body -->
-                        
-                        <!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-                        
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">I understand - Delete my booking</button>
-                        </div><!-- /.modal-footer -->
-                        
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
         </main>
     @endsection

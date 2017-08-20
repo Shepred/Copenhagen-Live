@@ -106,6 +106,9 @@ return [
         'callsign' => [
             'unique' => 'Callsign has already been booked. Please choose another.'
         ],
+        'sta' => [
+            'unique' => 'The scheduled time of arrival field is required.'
+        ],
     ],
 
     /*

@@ -54,6 +54,9 @@
 									<a href="{{ url('/booking') }}">Booking</a>
 								</li>
 								<li>
+									<a href="{{ url('/competitions') }}">Competitions</a>
+								</li>
+								<li>
 									<a href="{{ url('/') }}#faq">Frequently Asked Questions</a>
 								</li>
 								<li>

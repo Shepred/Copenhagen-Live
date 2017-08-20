@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/competitions', 'HomeController@competitions')->name('competitions');
 
 Route::get('/login', 'Auth\LoginController@login')->name('login');
 Route::get('/login/validate', 'Auth\LoginController@validateLogin');
@@ -18,5 +19,9 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/booking', 'BookingController@index')->name('booking.index');
 
-Route::get('/booking/create', 'BookingController@create')->name('booking.create');
-Route::post('/booking', 'BookingController@store')->name('booking.store');
+Route::get('/booking/create/departure', 'BookingController@createDeparture')->name('booking.createDeparture');
+Route::get('/booking/create/arrival', 'BookingController@createArrival')->name('booking.createArrival');
+Route::post('/booking/departure', 'BookingController@storeDeparture')->name('booking.storeDeparture');
+Route::post('/booking/arrival', 'BookingController@storeArrival')->name('booking.storeArrival');
+
+Route::get('/booking/{id}/delete', 'BookingController@destroy')->name('booking.delete');

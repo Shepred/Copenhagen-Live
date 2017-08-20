@@ -305,6 +305,7 @@ class ComposerStaticInitc3ccb2d6e8ae96fde22dd00adcb1f455
     );
 
     public static $classMap = array (
+        'AirportsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AirportsTableSeeder.php',
         'App\\Booking' => __DIR__ . '/../..' . '/app/Booking.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
