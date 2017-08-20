@@ -10,8 +10,8 @@
                         <div class="container">
                             <div class="caption vertical-bottom text-right">
                                 
-                                <h1 class="fadeInUp-1 light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
-                                <p class="fadeInUp-2 light-color">16 hours of staffing. Saturday, the 16th of September 2017.</p>
+                                <h1 class="fadeInUp-2 light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
+                                <p class="fadeInUp-2 light-bg dark-color"><span class="hero">0600Z - 2200 Z - 16 hours of staffing. Saturday, the 16th of September 2017.</span></p>
                                 
                             </div><!-- /.caption -->
                         </div><!-- /.container -->
@@ -22,7 +22,7 @@
                             <div class="caption vertical-bottom text-right">
                                 
                                 <h1 class="light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
-                                <p class="light-color">16 hours of staffing. Saturday, the 16th of September 2017.</p>
+                                <p class="light-bg dark-color"><span class="hero">0600Z - 2200 Z - 16 hours of staffing. Saturday, the 16th of September 2017.</span></p>
                                 
                             </div><!-- /.caption -->
                         </div><!-- /.container -->
@@ -33,7 +33,7 @@
                             <div class="caption vertical-bottom text-right">
                                 
                                 <h1 class="light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
-                                <p class="light-color">16 hours of staffing. Saturday, the 16th of September 2017.</p>
+                                <p class="light-bg dark-color"><span class="hero">0600Z - 2200 Z - 16 hours of staffing. Saturday, the 16th of September 2017.</span></p>
                                 
                             </div><!-- /.caption -->
                         </div><!-- /.container -->
@@ -44,7 +44,7 @@
                             <div class="caption vertical-bottom text-right">
                                 
                                 <h1 class="light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
-                                <p class="light-color">16 hours of staffing. Saturday, the 16th of September 2017.</p>
+                                <p class="light-bg dark-color"><span class="hero">0600Z - 2200 Z - 16 hours of staffing. Saturday, the 16th of September 2017.</span></p>
                                 
                             </div><!-- /.caption -->
                         </div><!-- /.container -->
@@ -55,7 +55,7 @@
                             <div class="caption vertical-bottom text-right">
                                 
                                 <h1 class="light-bg dark-color"><span>COPENHAGEN LIVE {{ date("Y") }}</span></h1>
-                                <p class="light-color">16 hours of staffing. Saturday, the 16th of September 2017.</p>
+                                <p class="light-bg dark-color"><span class="hero">0600Z - 2200 Z - 16 hours of staffing. Saturday, the 16th of September 2017.</span></p>
                                 
                             </div><!-- /.caption -->
                         </div><!-- /.container -->

@@ -26,3 +26,12 @@
     background-color: #d9534f;
     border-color: #d43f3a;
 }
+.hero-img {
+	height: 85px;
+}
+.text-black {
+	color: #000;
+}
+span.hero {
+	padding: .250em 0;
+}

@@ -34,7 +34,7 @@
 								<label for="aircraft">Aircraft Type</label>
 								<input type="text" class="form-control" name="aircraft" id="aircraft" placeholder="e.g. A320" required/>
 
-								<label for="sobt">Scheduled Time of Arrival</label>
+								<label for="sobt">Scheduled Time of Arrival (Z)</label>
         						<div class="input-group bootstrap-timepicker timepicker">
             						<input id="timepicker" type="text" class="form-control" name="sta" placeholder="All times are listed in Zulu" required/>
             						<span class="input-group-addon"><i class="icon-back-in-time"></i></span>

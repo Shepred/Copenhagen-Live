@@ -104,7 +104,7 @@ return [
             'required' => 'The scheduled off-block time field is required.',
         ],
         'callsign' => [
-            'unique' => 'Callsign has already been booked. Please choose another.'
+            'unique' => 'Callsign has already been booked. Consider adding a letter at the end of your callsign to make it unique.'
         ],
         'sta' => [
             'unique' => 'The scheduled time of arrival field is required.'
