@@ -124,27 +124,26 @@
                     
                         <div class="col-sm-6 inner-right-sm inner-top-sm">
                             
-                            <h3>Q #!</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
+                            <h3>I want to make a booking. Does it have to be a real world flight?</h3>
+                            <p>No. You can make your flight excactly the way you like it. If you have a favorite callsign or a route not flown on the day, it's all in your power to do so. However, should you choose to book a real world flight, our systems assign you the real world stand, as well as priority, should slots be necessary.</p>
                             
-                            <h3>Q #2</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
-                            
-                            <h3>Q #3</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
+                            <h3>I want to participate in one of your competitions. How do I do it?</h3>
+                            <p>All competitions are based on the amount of sectors you complete, the time of landings and departures. Therefore all you need is to complete your flight and you will automatically enroll in all applicable competitions.</p>
+
+                            <h3>Is it possible to book more than one flight, including numerous arrivals and departures?</h3>
+                            <p>Of course! All bookings are saved to your VATSIM ID. If you select the same airline or callsign for an inbound or outbound flight, we will automatically assign you the gate that matches your round trip. If you want to make sure the gate is changed for any reason, please let is know in the remarks of your booking.</p>
                             
                         </div><!-- /.col -->
                     
-                        <div class="col-sm-6 inner-left-sm inner-top-sm">
+                        <div class="col-sm-6 inner-left-sm inner-top-sm">                 
+                            <h3>I can't make it to the event anyway, how do I delete my booking?</h3>
+                            <p>If you are hindered from participating in the event, kindly log in above and press the "X" icon on your booking. This will delete it and free up the callsign for use by other pilots during the event.</p>
+
+                            <h3>For how long will I be able to book?</h3>
+                            <p>As it will be a significant task to organize all of the incoming bookings, we expect to close bookings 24 to 48 hours before the event begins. Once the time is set in stone, we will announce it.</p>
                             
-                            <h3>Q #4</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
-                            
-                            <h3>Q #5</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
-                            
-                            <h3>Q #6</h3>
-                            <p>Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem volor remped modis volor.</p>
+                            <h3>How will I know if I have been assigned a slot or a stand?</h3>
+                            <p>Once we have processed all of the bookings, we will send out information to the e-mail you have provided us with when you booked. If you for some reason haven't received an e-mail, simply log in and view your assigned slot and stand on the website.</p>
                             
                         </div><!-- /.col -->
                         

@@ -66,7 +66,7 @@
                                                         <td class="text-center">{{$booking->sobt}} Z</td>
                                                         <td>{{$booking->email}}</td>
                                                         <td>{{$booking->remarks}}</td>
-                                                        <td class="text-center"><a data-toggle="modal" href="#modal-confirm-delete"><i class="icon-cancel-1"></i></a></td>
+                                                        <td class="text-center"><a href="{{ route('booking.delete', $booking->callsign) }}" data-toggle="tooltip" title="Delete Booking"><i class="icon-cancel-1"></i></a></td>
                                                     </tr>
                                                     @endforeach
                                                     
@@ -119,7 +119,7 @@
                                                         <td class="text-center">{{$booking->sta}} Z</td>
                                                         <td>{{$booking->email}}</td>
                                                         <td>{{$booking->remarks}}</td>
-                                                        <td class="text-center"><a ng-click="setActiveCallsign({{ $booking->callsign }})"><i class="icon-cancel-1"></i></a></td>
+                                                        <td class="text-center"><a href="{{ route('booking.delete', $booking->callsign) }}" data-toggle="tooltip" title="Delete Booking"><i class="icon-cancel-1"></i></a></td>
                                                     </tr>
                                                     @endforeach
                                                     
@@ -307,62 +307,6 @@
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section>
-            <div class="modal fade" id="modal-confirm-delete" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-delete" aria-hidden="true">
-                <div class="modal-dialog modal-xs">
-                    <div class="modal-content">
-                        
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-                            <h4 class="modal-title" id="modal-confirm-delete">Confirm Deletion</h4>
-                        </div><!-- /.modal-header -->
-                        
-                        <!-- ============================================================= MODAL CONTENT ============================================================= -->
-                        
-                        <div class="modal-body">
-                            
-                            <div class="container inner-xs text-center">
-                                <h2>Are you sure?</h2>
-                                <p>Once you have deleted your booking, your callsign will be freed up for use by other pilots.</p>
-                            </div><!-- /.container -->
-                            
-                        </div><!-- /.modal-body -->
-                        
-                        <!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-                        
-                        <div class="modal-footer">
-                            <a href="javascript:void(0)" ng-click="deleteBooking()" class="btn btn-danger btn-block" type="submit">
-                                Delete Booking - @{{activeCallsign}}
-                            </a>
-                        </div><!-- /.modal-footer -->
-                        
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
         </main>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
-        <script>
-            var app = angular.module('bookingsApp', []);
-            var base_url = "{{ \URL('/') }}" + "/";
-            app.controller('bookingsController', function($scope, $http) {
-                $scope.activeCallsign = "";
-
-                setActiveCallsign = function(callsign) {
-                    $scope.activeCallsign = callsign;
-                    console.log(callsign)
-                    $window.location.href = '#modal-confirm-delete';
-                }                
-
-                deleteBooking = function() {
-                    $http({
-                        method: 'GET',
-                        url: base_url + 'booking/' + activeCallsign + '/delete'
-                    }).then(function successCallback(data) {
-                        console.log(data);
-                    })                    
-                }
-            });
-        </script>
 
     @endsection
