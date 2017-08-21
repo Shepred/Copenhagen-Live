@@ -68,9 +68,9 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <h2>Morning Rush</h2>
-                                                <p>The morning rush! All your passengers are waiting to get either down south on vacation, up north to visit family or simply attending business meetings. Either way, the early departure is important, and you gotta be on time. To encourage early risers everyone who departs Copenhagen between 0600z and 0730z, are submitted into the competition where two winners will be drawn, one will win Aerosoft Bali X, and the other will win a copy of the new Aerosoft Tronheim X V2!</p>
-                                                <p>How to enter competition: Depart Copenhagen between 0600z and 0730z</p>
-                                                <p>Prizes: 1 x Aerosoft Bali X & 1 x Aerosoft Tronheim Vaernes V2</p>
+                                                <p>The morning rush! All of your passengers are waiting to get down south on vacation, up north to visit family or simply attend business meetings. Either way, the early departures are important, and you have be on time.To encourage early birds, everyone who departs Copenhagen between 0600Z and 0700Z will have a chance to win a FlyTampa product of their own choosing. If that's a bit too early for you, depart between 0700Z and 0830Z and have the chance of winning Aerosoft's Bali X.</p>
+                                                <p>How to enter competition: Depart Copenhagen between 0600Z and 0730Z</p>
+                                                <p>Prizes: 1 x FlyTampa product X & 1 x Aerosoft Bali X</p>
                                             </div><!-- /.col -->
                                         </div><!-- /.row -->
                                     </div><!-- /.tab-content -->
@@ -79,9 +79,9 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <h2>Midday Turnaround</h2>
-                                                <p>This competition is open to everyone who flies into Copenhagen, makes a turnaround and flies out again between 1000z and 1300z. Stay close to your flight plan, make a nice turnaround and you might be the lucky one.</p>
-                                                <p>How to enter competition: Fly into Copenhagen, do a turnaround and depart again between 10z and 13z. Max turnaround time is 45 minutes.</p>
-                                                <p>Prizes: 1 x FlyTampa product & 1 x FS2Crew product</p>
+                                                <p>This competition is open to everyone who flies into Copenhagen, makes a turnaround and flies out again between 1000Z and 1300Z. Stay close to your flight plan, make a quick turnaround and you might be the lucky one.</p>
+                                                <p>How to enter competition: Fly into Copenhagen, do a turnaround and depart again between 1000Z and 1300Z. Max turnaround time is 45 minutes.</p>
+                                                <p>Prizes: 1 x Aerosoft Trondheim Vaernes V2 & 1 x FS2Crew product</p>
                                             </div><!-- /.col -->
                                         </div><!-- /.row -->
                                     </div><!-- /.tab-content -->     
@@ -90,8 +90,8 @@
                                             <div class="col-md-12">
                                                 <h2>Evening Legs</h2>
 
-                                                <p>When the day is over everybody must return back to base. The competition will be based on everyone landing after 2030z and until 2200. It does not matter if you fly out again, or finishes your flight in Copenhagen. Every landing at this time is in the competition.</p>
-                                                <p>How to enter competition: Land in Copenhagen between 2030 and 2200.</p>
+                                                <p>When the day is over everybody must return to base. Everybody landing in Copenhagen between 2030Z and 2200Z will automatically enter this competition. Whether if you depart Copenhagen once more or take the rest of the night off is up to you, it won't affect your entry.
+                                                <p>How to enter competition: Land in Copenhagen between 2030Z and 2200Z.</p>
                                                 <p>Prizes: 1 x Vidan Design Billund & 1 x Vidan Design Jylland/Sjælland</p>
 
                                             </div><!-- /.col -->

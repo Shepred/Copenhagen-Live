@@ -64,7 +64,7 @@
                 </div><!-- /.owl-carousel -->
             </section>
             <section id="information">
-                <div class="container inner">
+                <div class="container inner inner-bottom">
                     <div class="row">
                         
                         <div class="col-sm-6 inner-right-xs text-right aos-init aos-animate" data-aos="fade-up">
@@ -82,7 +82,7 @@
                     <div class="row inner-top-md">
                         
                         <div class="col-sm-6 col-sm-push-6 inner-left-xs">
-                            <figure><a href="#modal-product01" data-toggle="modal"><img src="{{ asset('assets/images/banners/6.jpg') }}" alt=""></a></figure>
+                            <figure><a href="#"><img src="{{ asset('assets/images/banners/6.jpg') }}" alt=""></a></figure>
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
@@ -95,7 +95,7 @@
                     <div class="row inner-top-md">
                         
                         <div class="col-sm-6 inner-right-xs text-right">
-                            <figure><a href="#modal-product01" data-toggle="modal"><img src="{{ asset('assets/images/banners/7.jpg') }}" alt=""></a></figure>
+                            <figure><a href="#"><img src="{{ asset('assets/images/banners/7.jpg') }}" alt=""></a></figure>
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 inner-top-xs inner-left-xs">
