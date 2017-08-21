@@ -52,7 +52,7 @@ $(document).ready(function() {
 		});
 		$('.affix, .affix-top')
 			.wrap('<div class="affix-wrapper"></div>')
-			.parent().css('min-height', $('.affix, .affix-top').outerHeight(true));
+			//.parent().css('min-height', $('.affix, .affix-top').outerHeight(true));
 	}
 	
 	function affixUnwrap() {
