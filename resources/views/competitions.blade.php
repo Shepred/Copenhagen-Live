@@ -5,7 +5,7 @@
                 <div class="container inner">
                     
                     <div class="row">
-                        <div class="col-md-8 col-sm-9 center-block text-center">
+                        <div class="col-md-8 col-sm-9 center-block text-center inner-bottom">
                             <header>
                                 <h1>Competitions!</h1>
                                 <p>Everybody loves a good competition, right?<br>To make the day extra special we have arranged several competetions throughout the day, with prices from several renowned vendors!</p>
@@ -14,6 +14,19 @@
                             </header>
                         </div><!-- /.col -->
                     </div><!-- ./row -->
+
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <img class="sponsor-main" src="{{ asset('/assets/images/sponsors/aerosoft_black.png') }}" />
+                            <img class="sponsor-main" src="{{ asset('/assets/images/sponsors/vidandesign.png') }}" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center">
+                            <img class="sponsor-main" src="{{ asset('/assets/images/sponsors/fs2crew.png') }}" />
+                            <img class="sponsor-main" src="{{ asset('/assets/images/sponsors/flytampa.png') }}" />
+                        </div>                    
+                    </div>
                     
                     <div class="row">
                         

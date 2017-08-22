@@ -1,9 +1,8 @@
 @extends('layout.master')
     @section('content')
-        <main ng-app="bookingsApp" ng-controller="bookingsController">
+        <main>
             <section id="booking" class="light-bg">
                 <div class="container inner">
-                    
                     <div class="row">
                         <div class="col-md-8 col-sm-9 center-block text-center">
                             <header>

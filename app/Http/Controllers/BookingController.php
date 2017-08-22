@@ -7,6 +7,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use \App\BookingDeparture;
 use \App\BookingArrival;
+use \App\Mail\ConfirmBooking;
+use \App\Mail\DeleteBooking;
 use Auth;
 use VatsimSSO;
 use Session;
@@ -86,6 +88,10 @@ class BookingController extends Controller
         //Redirect to /booking with success message
         flash('Your booking has successfully been created!');
 
+        //Send confirmation e-mail
+        \Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
+
+        //Redirect to /booking
         return redirect('/booking');
 
     }

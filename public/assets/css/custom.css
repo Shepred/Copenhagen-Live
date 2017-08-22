@@ -38,3 +38,9 @@ span.hero {
 .blurred-edge {
 	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
 }
+.sponsor {
+	max-height: 48px;
+}
+.sponsor-main {
+	max-height: 80px;
+}

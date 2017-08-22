@@ -101,6 +101,13 @@
                         <div class="col-sm-6 inner-top-xs inner-left-xs">
                             <h2>Competitions!</h2>
                             <p>The controller team behind this year's installment of Copenhagen Live have teamed up with numerous developers, and as such are proud to present a wide range of competitions throughout the day.</p>
+                            <p>
+                                <img class="sponsor" src="{{ asset('/assets/images/sponsors/aerosoft.png') }}" />
+                                <img class="sponsor" src="{{ asset('/assets/images/sponsors/vidandesign.png') }}" />
+                                <br>
+                                <img class="sponsor" src="{{ asset('/assets/images/sponsors/fs2crew.png') }}" />
+                                <img class="sponsor" src="{{ asset('/assets/images/sponsors/flytampa.png') }}" />
+                            </p>
                             <a href="{{ url('/competitions') }}" class="txt-btn">More details here!</a>
                         </div><!-- /.col -->
                         
@@ -128,7 +135,7 @@
                             <p>No. You can make your flight excactly the way you like it. If you have a favorite callsign or a route not flown on the day, it's all in your power to do so. However, should you choose to book a real world flight, our systems assign you the real world stand, as well as priority, should slots be necessary.</p>
                             
                             <h3>I want to participate in one of your competitions. How do I do it?</h3>
-                            <p>All competitions are based on the amount of sectors you complete, the time of landings and departures. Therefore all you need is to complete your flight and you will automatically enroll in all applicable competitions.</p>
+                            <p>All competitions are based on the amount of sectors you complete, the time of landings and departures. Therefore all you have to do is to complete your flight and you will automatically enroll in all applicable competitions.</p>
 
                             <h3>Is it possible to book more than one flight, including numerous arrivals and departures?</h3>
                             <p>Of course! All bookings are saved to your VATSIM ID. If you select the same airline or callsign for an inbound or outbound flight, we will automatically assign you the gate that matches your round trip. If you want to make sure the gate is changed for any reason, please let is know in the remarks of your booking.</p>
@@ -142,7 +149,7 @@
                             <h3>For how long will I be able to book?</h3>
                             <p>As it will be a significant task to organize all of the incoming bookings, we expect to close bookings 24 to 48 hours before the event begins. Once the time is set in stone, we will announce it.</p>
                             
-                            <h3>How will I know if I have been assigned a slot or a stand?</h3>
+                            <h3>How will I know if I have been assigned a slot or a stand number?</h3>
                             <p>Once we have processed all of the bookings, we will send out information to the e-mail you have provided us with when you booked. If you for some reason haven't received an e-mail, simply log in and view your assigned slot and stand on the website.</p>
                             
                         </div><!-- /.col -->
