@@ -41,3 +41,6 @@ span.hero {
 .sponsor {
 	max-height: 48px;
 }
+.sponsor-main {
+	max-height: 80px;
+}
