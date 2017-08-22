@@ -15,6 +15,8 @@ class CreateArrivalBookingsTable extends Migration
     {
         Schema::create('arrival_bookings', function (Blueprint $table) {
             $table->integer('id');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->string('callsign')->unique();
             $table->string('origin');
             $table->string('destination');

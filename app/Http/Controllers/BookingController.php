@@ -72,6 +72,8 @@ class BookingController extends Controller
         //Save data to database
         $booking = BookingDeparture::create([
             'id' => Session::get('user')->id,
+            'first_name' => Session::get('user')->name_first,
+            'last_name' => Session::get('user')->name_last,
             'callsign' => $request['callsign'],
             'origin' => $request['origin'],
             'destination' => $request['destination'],
@@ -104,6 +106,8 @@ class BookingController extends Controller
         //Save data to database
         $booking = BookingArrival::create([
             'id' => Session::get('user')->id,
+            'first_name' => Session::get('user')->name_first,
+            'last_name' => Session::get('user')->name_last,
             'callsign' => $request['callsign'],
             'origin' => $request['origin'],
             'destination' => $request['destination'],
