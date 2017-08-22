@@ -17,6 +17,7 @@ class CreateArrivalBookingsTable extends Migration
             $table->integer('id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->primary('callsign');
             $table->string('callsign')->unique();
             $table->string('origin');
             $table->string('destination');

@@ -170,6 +170,7 @@ class BookingController extends Controller
         $user = Session::get('user');
         $userId = $user->id;
 
+
         // Pull in the booking ID from the database
         $booking = \App\BookingDeparture::where('callsign', $callsign)->where('id', $userId)->first();
 
