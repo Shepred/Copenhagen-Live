@@ -65,6 +65,9 @@
             </section>
             <section id="information">
                 <div class="container inner inner-bottom">
+                    <div class="row text-center inner-bottom">
+                        <img src="{{ asset('/assets/images/vatsca.png') }}" />
+                    </div>
                     <div class="row">
                         
                         <div class="col-sm-6 inner-right-xs text-right aos-init aos-animate" data-aos="fade-up">
