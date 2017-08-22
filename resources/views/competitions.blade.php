@@ -9,7 +9,7 @@
                             <header>
                                 <h1>Competitions!</h1>
                                 <p>Everybody loves a good competition, right?<br>To make the day extra special we have arranged several competetions throughout the day, with prices from several renowned vendors!</p>
-                                <p>Please note that, in order for your flights to count, they must all be registered on our website.</p>
+                                <p>It is not mandatory to create a booking on this website to participate in the events listed below, however we do strongly encourage it.</p>
                                  
                             </header>
                         </div><!-- /.col -->
