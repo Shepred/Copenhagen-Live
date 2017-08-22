@@ -64,11 +64,12 @@ class LoginController extends Controller
         Session::forget('vatsimauth');       
 
         // If user 'returns to site', return to home - $request returns null values
-        if (! $request->input('oauth_verifier'))
+        if (! $request->input('oauth_verifier')){
 
             flash('Your login has been cancelled.');
-        
+
             return redirect()->route('home');
+        }
 
         $sso = VatsimSSO::checkLogin($session['key'], $session['secret'], $request->input('oauth_verifier'));
         Session::put('user', $sso->user);
