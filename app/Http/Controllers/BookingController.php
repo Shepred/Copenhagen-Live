@@ -89,7 +89,7 @@ class BookingController extends Controller
         flash('Your booking has successfully been created!');
 
         //Send confirmation e-mail
-        \Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
+        //\Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
 
         //Redirect to /booking
         return redirect('/booking');
@@ -125,6 +125,9 @@ class BookingController extends Controller
 
         //Redirect to /booking with success message
         flash('Your booking has successfully been created!');
+
+        //Send confirmation e-mail
+        //\Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
 
         return redirect('/booking');
 
