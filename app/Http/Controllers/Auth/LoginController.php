@@ -61,7 +61,12 @@ class LoginController extends Controller
     public function validateLogin(Request $request)
     {
         $session = Session::get('vatsimauth');
-        Session::forget('vatsimauth');        
+        Session::forget('vatsimauth');       
+
+        // If user 'returns to site', return to home - $request returns null values
+        if (! $request->input('oauth_verifier'))
+            return redirect()->route('home');
+
         $sso = VatsimSSO::checkLogin($session['key'], $session['secret'], $request->input('oauth_verifier'));
         Session::put('user', $sso->user);
 

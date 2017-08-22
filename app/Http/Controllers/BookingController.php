@@ -173,15 +173,12 @@ class BookingController extends Controller
         // Pull in the booking ID from the database
         $booking = \App\BookingDeparture::where('callsign', $callsign)->where('id', $userId)->first();
 
-        if(count($booking) === 0) {
+        if(! $booking)
             $booking = \App\BookingArrival::where('callsign', $callsign)->where('id', $userId)->first();
-        }
 
         //Check if the URI belongs to the logged in user
         if(! $booking || $booking->id != $userId) {
-
             flash('You do not have access to this booking.')->error();
-
             return redirect('/booking');
         }
 
@@ -189,7 +186,6 @@ class BookingController extends Controller
         $booking->delete();
 
         //Flash the session with the message
-
         flash('Your booking has successfully been deleted!');
 
         //Redirect to /booking
