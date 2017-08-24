@@ -172,7 +172,7 @@
                             <div class="icon">
                                 <i class="icon-users-1 icn lg"></i>
                             </div><!-- /.icon -->
-                            <h2>128 Unique Pilots</h2>
+                            <h2>{{ $stats['uniquePilots'] }} Unique Pilots</h2>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     

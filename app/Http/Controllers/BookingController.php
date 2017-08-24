@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
-use \App\BookingDeparture;
-use \App\BookingArrival;
-use \App\Mail\ConfirmBooking;
-use \App\Mail\DeleteBooking;
 use Auth;
 use VatsimSSO;
 use Session;
 use Redirect;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Collection;
+use App\Http\Controllers\Controller;
+use App\Airport;
+use App\BookingDeparture;
+use App\BookingArrival;
+use App\Mail\ConfirmBooking;
+use App\Mail\DeleteBooking;
+
 
 class BookingController extends Controller
 {
@@ -27,15 +30,23 @@ class BookingController extends Controller
      */
     public function index()
     {
+        $departures = BookingDeparture::select('id')->get()->pluck('id');
+        $arrivals = BookingArrival::select('id')->get()->pluck('id');
+
+        $uniquePilots = $departures->merge($arrivals);
+        $uniquePilots = $uniquePilots->unique()->count();
+                
+
         $stats = [
-            'flights' => \App\BookingDeparture::count() + \App\BookingArrival::count(),
-            'departures' => \App\BookingDeparture::count(),
-            'arrivals' => \App\BookingArrival::count()
+            'flights' => BookingDeparture::count() + BookingArrival::count(),
+            'departures' => BookingDeparture::count(),
+            'arrivals' => BookingArrival::count(),
+            'uniquePilots' => $uniquePilots
         ];
 
         $user = Session::get('user');
-        $departureBookings = \App\BookingDeparture::where('id', $user->id)->get();
-        $arrivalBookings = \App\BookingArrival::where('id', $user->id)->get();
+        $departureBookings = BookingDeparture::where('id', $user->id)->get();
+        $arrivalBookings = BookingArrival::where('id', $user->id)->get();
 
         return view('booking.index')->with(compact('user', 'departureBookings', 'arrivalBookings', 'stats'));
     }
@@ -47,13 +58,13 @@ class BookingController extends Controller
      */
     public function createDeparture()
     {
-        $airports = \App\Airport::get();
+        $airports = Airport::get();
         return view('booking.create_departure')->with(compact('airports'));
     }
 
     public function createArrival()
     {
-        $airports = \App\Airport::get();
+        $airports = Airport::get();
         return view('booking.create_arrival')->with(compact('airports'));
     }
 
@@ -186,12 +197,11 @@ class BookingController extends Controller
         $user = Session::get('user');
         $userId = $user->id;
 
-
         // Pull in the booking ID from the database
-        $booking = \App\BookingDeparture::where('callsign', $callsign)->where('id', $userId)->first();
+        $booking = BookingDeparture::where('callsign', $callsign)->where('id', $userId)->first();
 
         if(! $booking)
-            $booking = \App\BookingArrival::where('callsign', $callsign)->where('id', $userId)->first();
+            $booking = BookingArrival::where('callsign', $callsign)->where('id', $userId)->first();
 
         //Check if the URI belongs to the logged in user
         if(! $booking || $booking->id != $userId) {
@@ -200,7 +210,7 @@ class BookingController extends Controller
         }
 
         //Send email confirmation
-        \Mail::to($booking->email)->send(new DeleteBooking(Session::get('user'),$booking));
+        \Mail::to($booking->email)->send(new DeleteBooking(Session::get('user'), $booking));
 
         // Delete the flight from the database
         $booking->delete();
