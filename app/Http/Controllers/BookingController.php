@@ -33,8 +33,7 @@ class BookingController extends Controller
         $departures = BookingDeparture::select('id')->get()->pluck('id');
         $arrivals = BookingArrival::select('id')->get()->pluck('id');
 
-        $uniquePilots = $departures->merge($arrivals);
-        $uniquePilots = $uniquePilots->unique()->count();
+        $uniquePilots = $departures->merge($arrivals)->unique()->count();        
                 
 
         $stats = [
