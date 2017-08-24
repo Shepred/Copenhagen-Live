@@ -22,7 +22,7 @@ class CreateArrivalBookingsTable extends Migration
             $table->string('origin');
             $table->string('destination');
             $table->string('aircraft');
-            $table->time('sta');
+            $table->time('eta');
             $table->string('email');
             $table->text('remarks')->nullable();
             $table->timestamps();

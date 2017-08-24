@@ -11,7 +11,7 @@ Below you'll find an overview of the data we have registered.
 @if(count($booking->sobt) > 0)
 - Schedules Off-Block Time: {{ $booking->sobt }}
 @else
-- Scheduled Time of Arrival: {{ $booking->sta }}
+- Scheduled Time of Arrival: {{ $booking->eta }}
 @endif
 @if(count($booking->remarks) > 0)
 - Remarks: {{ $booking->remarks }}

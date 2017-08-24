@@ -125,7 +125,7 @@
                         <div class="col-md-8 col-sm-9 center-block text-center">
                             <header>
                                 <h1>Questions?</h1>
-                                <p>Below you'll find some of the most frequently asked questions.<br>If your questions isn't answered below, feel free to get in touch using the contact form below.</p>
+                                <p>Below you'll find some of the most frequently asked questions. If your question isn't answered below, feel free to get in touch using the contact form below.</p>
                             </header>
                         </div><!-- /.col -->
                     </div><!-- /.row -->

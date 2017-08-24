@@ -4,6 +4,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta name="description" content="Copenhagen Live {{ date("Y") }} on VATSIM, an unnual event taking place in the virtual skies above Denmark.">
 	<meta name="author" content="Copenhagen Live {{ date("Y") }}">
+	<meta property="og:image" content="{{ asset('assets/images/banners/event.jpg') }}" />
+
+	<meta property="og:description" content="Copenhagen Live {{ date("Y") }} on VATSIM, an unnual event taking place in the virtual skies above Denmark." />
+
+	<meta property="og:url"content="http://www.coachesneedsocial.com/coacheswisdomtelesummit/" />
+
+	<meta property="og:title" content="{{ url('/') }}" />
+
+	<meta property="http://ogp.me/ns#image" content="{{ asset('assets/images/banners/event.jpg') }}" />
 		
 	<!-- Core CSS -->
 	<link href="{{ asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -29,9 +38,6 @@
 		
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{ asset('/assets/images/favicon.ico') }}">
-
-	<meta property='og:image' content="{{ asset('assets/images/banners/event.jpg') }}" />
-	<meta property="http://ogp.me/ns#image" content="{{ asset('assets/images/banners/event.jpg') }}" />
 
 		
 	<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->

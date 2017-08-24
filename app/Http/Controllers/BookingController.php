@@ -121,7 +121,7 @@ class BookingController extends Controller
             'origin' => 'required|size:4',
             'destination' =>'required|size:4',
             'aircraft' => 'required|size:4',
-            'sta' => 'required',
+            'eta' => 'required',
             'email' => 'required|email',
             'remarks' => 'nullable',
             ]);
@@ -135,7 +135,7 @@ class BookingController extends Controller
             'origin' => $request['origin'],
             'destination' => $request['destination'],
             'aircraft' => $request['aircraft'],
-            'sta' => $request['sta'],
+            'eta' => $request['sta'],
             'email' => $request['email'],
             'remarks' => $request['remarks'],
         ]);
