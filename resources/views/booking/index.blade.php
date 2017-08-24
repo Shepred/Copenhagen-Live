@@ -115,7 +115,7 @@
                                                         <td class="text-center">{{$booking->origin}}</td>
                                                         <td class="text-center">{{$booking->destination}}</td>
                                                         <td class="text-center">{{$booking->aircraft}}</td>
-                                                        <td class="text-center">{{$booking->sta}} Z</td>
+                                                        <td class="text-center">{{$booking->eta}} Z</td>
                                                         <td>{{$booking->email}}</td>
                                                         <td>{{$booking->remarks}}</td>
                                                         <td class="text-center"><a href="{{ route('booking.delete', $booking->callsign) }}" data-toggle="tooltip" title="Delete Booking"><i class="icon-cancel-1"></i></a></td>
