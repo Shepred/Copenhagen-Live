@@ -29,6 +29,10 @@
 		
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{ asset('/assets/images/favicon.ico') }}">
+
+	<meta property='og:image' content="{{ asset('assets/images/banners/event.jpg') }}" />
+	<meta property="http://ogp.me/ns#image" content="{{ asset('assets/images/banners/event.jpg') }}" />
+
 		
 	<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
 	<!--[if lt IE 9]>
