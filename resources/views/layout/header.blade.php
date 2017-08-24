@@ -11,9 +11,7 @@
 	<meta property="og:url" content="{{ url('/') }}" />
 
 	<meta property="og:title" content="Copenhagen Live {{ date("Y") }}" />
-
-	<meta property="http://ogp.me/ns#image" content="{{ asset('assets/images/banners/event.jpg') }}" />
-		
+			
 	<!-- Core CSS -->
 	<link href="{{ asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/assets/css/bootstrap-timepicker.min.css') }}" rel="stylesheet">
