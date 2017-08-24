@@ -85,7 +85,7 @@
                     <div class="row inner-top-md">
                         
                         <div class="col-sm-6 col-sm-push-6 inner-left-xs">
-                            <figure><a href="#"><img src="{{ asset('assets/images/banners/6.jpg') }}" alt=""></a></figure>
+                            <figure><a href="#information"><img src="{{ asset('assets/images/banners/6.jpg') }}" alt=""></a></figure>
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
@@ -98,7 +98,7 @@
                     <div class="row inner-top-md">
                         
                         <div class="col-sm-6 inner-right-xs text-right">
-                            <figure><a href="#"><img src="{{ asset('assets/images/banners/7.jpg') }}" alt=""></a></figure>
+                            <figure><a href="#information"><img src="{{ asset('assets/images/banners/7.jpg') }}" alt=""></a></figure>
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 inner-top-xs inner-left-xs">
@@ -160,47 +160,6 @@
                     </div><!-- /.row -->
                     
                 </div><!-- /.container -->
-            </section>
-            <section id="contact">
-                <div class="container inner">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h1>Contact Us</h1>
-                            
-                            <form id="contactform" class="forms" action="contact.php" method="post">
-                                
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="text" name="name" class="form-control" placeholder="Name (Required)">
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                                
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="email" name="email" class="form-control" placeholder="Email (Required)">
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                                
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input type="text" name="subject" class="form-control" placeholder="Subject">
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                                
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <textarea name="message" class="form-control" placeholder="Enter your message ..."></textarea>
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                                
-                                <button type="submit" class="btn btn-default btn-submit">Submit message</button>
-                                
-                            </form>
-                            
-                            <div id="response"></div>
-                        </div>
-                    </div>
-                </div>
             </section>
         </main>
     @endsection

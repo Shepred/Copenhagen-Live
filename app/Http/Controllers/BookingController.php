@@ -27,11 +27,17 @@ class BookingController extends Controller
      */
     public function index()
     {
+        $stats = [
+            'flights' => \App\BookingDeparture::count() + \App\BookingArrival::count(),
+            'departures' => \App\BookingDeparture::count(),
+            'arrivals' => \App\BookingArrival::count()
+        ];
+
         $user = Session::get('user');
         $departureBookings = \App\BookingDeparture::where('id', $user->id)->get();
         $arrivalBookings = \App\BookingArrival::where('id', $user->id)->get();
 
-        return view('booking.index')->with(compact('user', 'departureBookings', 'arrivalBookings'));
+        return view('booking.index')->with(compact('user', 'departureBookings', 'arrivalBookings', 'stats'));
     }
 
     /**
@@ -89,7 +95,7 @@ class BookingController extends Controller
         flash('Your booking has successfully been created!');
 
         //Send confirmation e-mail
-        //\Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
+        \Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user'),$booking));
 
         //Redirect to /booking
         return redirect('/booking');
@@ -127,8 +133,9 @@ class BookingController extends Controller
         flash('Your booking has successfully been created!');
 
         //Send confirmation e-mail
-        //\Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user')));
+        \Mail::to($request['email'])->send(new ConfirmBooking(Session::get('user'),$booking));
 
+        //Redirect to /booking
         return redirect('/booking');
 
     }
@@ -191,6 +198,9 @@ class BookingController extends Controller
             flash('You do not have access to this booking.')->error();
             return redirect('/booking');
         }
+
+        //Send email confirmation
+        \Mail::to($booking->email)->send(new DeleteBooking(Session::get('user'),$booking));
 
         // Delete the flight from the database
         $booking->delete();

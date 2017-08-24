@@ -134,176 +134,48 @@
                     @endif
                 </div>
             </section>
-            <section id="inspiration">
+            <section id="stats">
                 <div class="container inner">
+                    
                     <div class="row">
                         <div class="col-md-8 col-sm-9 center-block text-center">
                             <header>
-                                <h1>Looking for inspiration?</h1>
-                                <p>Not sure what to fly for Copenhagen Live {{ date("Y") }}?<br>Look below for some real life flights happening on the day.</p>
+                                <h1>Who else is flying?</h1>
+                                <p>Below you'll find an overview of how many flights have been booked for Copenhagen Live {{ date("Y") }}.</p>
                             </header>
                         </div><!-- /.col -->
                     </div><!-- ./row -->
-                    <div class="row">
-                        <div class="col-sm-12 inner-top-md">
-                            <div id="owl-videos" class="owl-carousel owl-outer-nav owl-ui-md owl-item-gap">
-                                
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work01.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">EKCH - EGLL</a></h4>
-                                                <p>BAW815</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work02.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Grand Motel</a></h4>
-                                                <p>Identity</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work16.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Signwall</a></h4>
-                                                <p>Identity</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work08a.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Brand Stationery</a></h4>
-                                                <p>Identity</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work10.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Tri Fold Brochure</a></h4>
-                                                <p>Print</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work03.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Vintage Bicycles</a></h4>
-                                                <p>Interactive</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work18.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Modern CD Case</a></h4>
-                                                <p>Print</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/work09.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Astor & Yancy</a></h4>
-                                                <p>Identity</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                            
-                                <div class="item">
-                                    <figure>
-                                    
-                                        <div class="icon-overlay icn-link">
-                                            <a href="slider-carousel.html"><img src="assets/images/art/photograph02.jpg" alt=""></a>
-                                        </div><!-- /.icon-overlay -->
-                                        
-                                        <figcaption class="bordered no-top-border">
-                                            <div class="info">
-                                                <h4><a href="slider-carousel.html">Daydreaming</a></h4>
-                                                <p>Photography</p>
-                                            </div><!-- /.info -->
-                                        </figcaption>
-                                        
-                                    </figure>
-                                </div><!-- /.item -->
-                                
-                            </div><!-- /.owl-carousel -->
+                    <div class="row inner-top-sm text-center">
+                        
+                        <div class="col-sm-3 inner-bottom-xs">
+                            <div class="icon">
+                                <i class="icon-flight icn lg"></i>
+                            </div><!-- /.icon -->
+                            <h2>{{$stats['flights']}} Flights</h2>
+                        </div><!-- /.col -->
+                        
+                        <div class="col-sm-3 inner-bottom-xs">
+                            <div class="icon">
+                                <i class="icon-up-1 icn lg"></i>
+                            </div><!-- /.icon -->
+                            <h2>{{$stats['departures']}} Departures</h2>
+                        </div><!-- /.col -->
+                        
+                        <div class="col-sm-3 inner-bottom-xs">
+                            <div class="icon">
+                                <i class="icon-down-1 icn lg"></i>
+                            </div><!-- /.icon -->
+                            <h2>{{$stats['arrivals']}} Arrivals</h2>
+                        </div><!-- /.col -->
+                        
+                        <div class="col-sm-3 inner-bottom-xs">
+                            <div class="icon">
+                                <i class="icon-users-1 icn lg"></i>
+                            </div><!-- /.icon -->
+                            <h2>128 Unique Pilots</h2>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
+                    
                 </div><!-- /.container -->
             </section>
         </main>

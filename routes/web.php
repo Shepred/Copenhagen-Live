@@ -25,12 +25,3 @@ Route::post('/booking/departure', 'BookingController@storeDeparture')->name('boo
 Route::post('/booking/arrival', 'BookingController@storeArrival')->name('booking.storeArrival');
 
 Route::get('/booking/{id}/delete', 'BookingController@destroy')->name('booking.delete');
-
-Route::get('send_test_email', function(){
-	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
-	{
-		$message->subject('Booking Confirmation: SAS539');
-		$message->from('mail@cphlive-vatsim.net', 'Copenhagen Live 2017');
-		$message->to('jakob@lindvedmarker.com');
-	});
-});

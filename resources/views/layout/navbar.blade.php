@@ -59,9 +59,6 @@
 								<li>
 									<a href="{{ url('/') }}#faq">Frequently Asked Questions</a>
 								</li>
-								<li>
-									<a href="{{ url('/') }}#contact">Contact Us</a>
-								</li>
 								
 								@if (session('vatsim_authed') == true)
 								<li class="pull-right">
