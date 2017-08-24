@@ -8,9 +8,9 @@
 
 	<meta property="og:description" content="Copenhagen Live {{ date("Y") }} on VATSIM, an unnual event taking place in the virtual skies above Denmark." />
 
-	<meta property="og:url"content="http://www.coachesneedsocial.com/coacheswisdomtelesummit/" />
+	<meta property="og:url" content="{{ url('/') }}" />
 
-	<meta property="og:title" content="{{ url('/') }}" />
+	<meta property="og:title" content="Copenhagen Live {{ date("Y") }}" />
 
 	<meta property="http://ogp.me/ns#image" content="{{ asset('assets/images/banners/event.jpg') }}" />
 		
