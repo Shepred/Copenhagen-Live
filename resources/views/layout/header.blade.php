@@ -4,14 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta name="description" content="Copenhagen Live {{ date("Y") }} on VATSIM, an unnual event taking place in the virtual skies above Denmark.">
 	<meta name="author" content="Copenhagen Live {{ date("Y") }}">
+
+	<!-- Facebook Tags -->
 	<meta property="og:image" content="{{ asset('assets/images/banners/event.jpg') }}" />
-
 	<meta property="og:description" content="Copenhagen Live {{ date("Y") }} on VATSIM, an unnual event taking place in the virtual skies above Denmark." />
-
 	<meta property="og:url" content="{{ url('/') }}" />
-
 	<meta property="og:title" content="Copenhagen Live {{ date("Y") }}" />
-			
+
 	<!-- Core CSS -->
 	<link href="{{ asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/assets/css/bootstrap-timepicker.min.css') }}" rel="stylesheet">
