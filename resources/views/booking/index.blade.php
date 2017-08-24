@@ -101,7 +101,7 @@
                                                         <th class="text-center">Origin</th>
                                                         <th class="text-center">Destination</th>
                                                         <th class="text-center">Aircraft Type</th>
-                                                        <th class="text-center">Scheduled Time of Arrival</th>
+                                                        <th class="text-center">Estimaed Time of Arrival</th>
                                                         <th>E-mail Address</th>
                                                         <th>Remarks</th>
                                                         <th class="text-center">Action</th>
