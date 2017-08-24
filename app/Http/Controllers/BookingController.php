@@ -134,7 +134,7 @@ class BookingController extends Controller
             'origin' => $request['origin'],
             'destination' => $request['destination'],
             'aircraft' => $request['aircraft'],
-            'eta' => $request['sta'],
+            'eta' => $request['eta'],
             'email' => $request['email'],
             'remarks' => $request['remarks'],
         ]);
