@@ -49,7 +49,7 @@ return [
 	 * Your RSA **PRIVATE** key
 	 * If you are not using RSA, this value can be anything (or not set)
 	 */
-	'cert'            => openssl_get_privatekey(storage_path() . "/app/private.pem"),
+	'cert'            => openssl_get_privatekey(file_get_contents(storage_path() . "/app/private.pem", '')),
 
 	/*
 	 * Set to true to allow suspended users to sign in

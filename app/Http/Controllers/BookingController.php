@@ -30,6 +30,7 @@ class BookingController extends Controller
      */
     public function index()
     {
+    	
         $departures = BookingDeparture::select('id')->get()->pluck('id');
         $arrivals = BookingArrival::select('id')->get()->pluck('id');
 
