@@ -19,7 +19,7 @@ return [
 	/*
 	 * The location of the VATSIM OAuth interface
 	 */
-	'base'            => 'http://sso.hardern.net/server/',
+	'base'            => env('SSO_BASEURL'),
 
 	/*
 	 * The consumer key for your organisation (provided by VATSIM)
@@ -43,7 +43,7 @@ return [
 	 * Different options must be enabled on your account at VATSIM.
 	 * Options: RSA / HMAC
 	 */
-	'method'          => 'HMAC',
+	'method'          => 'RSA',
 
 	/*
 	 * Your RSA **PRIVATE** key
