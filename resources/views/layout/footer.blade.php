@@ -12,9 +12,14 @@
 								<a href="{{ url('/booking') }}">Booking</a>
 							</li>
 							<li>
-								<a href="{{ url('/') }}#faq">Frequently Asked Questions</a>
+								<a href="{{ url('/briefing') }}">Briefing</a>
 							</li>
-								
+							<li>
+								<a href="{{ url('/competitions') }}">Competitions</a>
+							</li>	
+							<li>
+								<a href="{{ url('/') }}#faq">FAQ</a>
+							</li>
 							@if (session('vatsim_authed') == true)
 							<li class="pull-right">
 								<a href="{{ url('logout') }}"><i class="icon-logout"></i>&nbsp;Log out</a>

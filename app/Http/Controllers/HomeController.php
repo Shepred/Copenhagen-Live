@@ -21,4 +21,8 @@ class HomeController extends Controller
     {
     	return view('competitions');
     }
+
+    public function briefing(){
+    	return view('briefing');
+    }
 }

@@ -12,6 +12,7 @@
 */
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/competitions', 'HomeController@competitions')->name('competitions');
+Route::get('/briefing', 'HomeController@briefing')->name('briefing');
 
 Route::get('/login', 'Auth\LoginController@login')->name('login');
 Route::get('/login/validate', 'Auth\LoginController@validateLogin');
