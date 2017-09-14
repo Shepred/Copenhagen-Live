@@ -43,7 +43,7 @@ return [
 	 * Different options must be enabled on your account at VATSIM.
 	 * Options: RSA / HMAC
 	 */
-	'method'          => 'HMAC',
+	'method'          => 'RSA',
 
 	/*
 	 * Your RSA **PRIVATE** key
