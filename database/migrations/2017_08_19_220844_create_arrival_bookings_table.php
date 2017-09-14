@@ -26,6 +26,7 @@ class CreateArrivalBookingsTable extends Migration
             $table->string('email');
             $table->text('remarks')->nullable();
             $table->timestamps();
+
         });
     }
 

@@ -43,7 +43,7 @@ return [
 	 * Different options must be enabled on your account at VATSIM.
 	 * Options: RSA / HMAC
 	 */
-	'method'          => 'RSA',
+	'method'          => 'HMAC',
 
 	/*
 	 * Your RSA **PRIVATE** key
@@ -62,4 +62,3 @@ return [
 	'allow_inactive'  => false,
 
 ];
- 

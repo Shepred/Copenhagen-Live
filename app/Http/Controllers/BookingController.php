@@ -15,6 +15,7 @@ use App\BookingDeparture;
 use App\BookingArrival;
 use App\Mail\ConfirmBooking;
 use App\Mail\DeleteBooking;
+use App\Mail\DispatchBooking;
 
 
 class BookingController extends Controller
@@ -220,5 +221,24 @@ class BookingController extends Controller
 
         //Redirect to /booking
         return redirect('/booking');
+    }
+    public function dispatchFlights()
+    {
+        $user = Session::get('user');
+        $userId = $user->id;
+
+        if($userId != 1300001) {
+            return redirect('/booking');
+        }
+        else {
+            $departures = BookingDeparture::all();
+            $arrivals = BookingArrival::all();
+
+            foreach($departures as $booking) 
+                \Mail::to($booking->email)->send(new DispatchBooking($booking));
+
+            foreach($arrivals as $booking)
+                \Mail::to($booking->email)->send(new DispatchBooking($booking));
+            }
     }
 }

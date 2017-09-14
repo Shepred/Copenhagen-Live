@@ -19,6 +19,7 @@ Route::get('/login/validate', 'Auth\LoginController@validateLogin');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/booking', 'BookingController@index')->name('booking.index');
+Route::get('/booking/dispatch', 'BookingController@dispatchFlights')->name('booking.dispatchFlights');
 
 Route::get('/booking/create/departure', 'BookingController@createDeparture')->name('booking.createDeparture');
 Route::get('/booking/create/arrival', 'BookingController@createArrival')->name('booking.createArrival');
