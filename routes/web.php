@@ -14,9 +14,14 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/competitions', 'HomeController@competitions')->name('competitions');
 Route::get('/briefing', 'HomeController@briefing')->name('briefing');
 
-Route::get('/login', 'Auth\LoginController@login')->name('login');
-Route::get('/login/validate', 'Auth\LoginController@validateLogin');
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+//Route::get('/login', 'Auth\LoginController@login')->name('login');
+Route::get('/login', 'HomeController@index')->name('login');
+
+//Route::get('/login/validate', 'Auth\LoginController@validateLogin');
+Route::get('/login/validate', 'HomeController@index');
+
+//Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/logout', 'HomeController@index')->name('logout');
 
 Route::get('/booking', 'BookingController@index')->name('booking.index');
 Route::get('/booking/dispatch', 'BookingController@dispatchFlights')->name('booking.dispatchFlights');

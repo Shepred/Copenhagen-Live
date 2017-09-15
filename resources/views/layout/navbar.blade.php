@@ -51,9 +51,6 @@
 									<a href="{{ url('/') }}">Home</a>
 								</li>
 								<li>
-									<a href="{{ url('/booking') }}">Booking</a>
-								</li>
-								<li>
 									<a href="{{ url('/briefing') }}">Briefing</a>
 								</li>	
 								<li>

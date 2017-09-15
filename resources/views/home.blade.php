@@ -75,9 +75,9 @@
                         </div><!-- /.col -->
                         
                         <div class="col-sm-6 inner-top-xs inner-left-xs">
-                            <h2>Bookings are now open!</h2>
-                            <p>Looking to participate in this yearly event? If you aren't a controller and you can't physically make it to Denmark, perhaps flying is the choice for you. Why don't you let us know when and where you're planning to fly to our virtrual homeland?</p>
-                            <a href="{{ url('/booking') }}" class="txt-btn">Create your booking now!</a>
+                            <h2>Bookings are now closed.</h2>
+                            <p>Thank you for the massive interest in Copenhagen Live {{ date("Y") }}! As the event nears, we have now closed for further bookings.</p>
+                            <p>All participants who have booked will receive a dispatch e-mail before the event begins. If you have not booked and you still want to fly, fear not! Simply load up your favourite flightsim, connect to VATSIM & fly!</p>
                         </div><!-- /.col -->
                         
                     </div><!-- /.row -->
