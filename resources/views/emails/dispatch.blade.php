@@ -28,7 +28,7 @@ As you are departing Copenhagen during a peak in traffic, you have been assigned
 @endif
 
 @if(count($booking->admin_remarks) > 0)
-Our planning team wanted you to know the following:
+Dispatch remarks:
 
 - {{ $booking->admin_remarks }}
 @endif
