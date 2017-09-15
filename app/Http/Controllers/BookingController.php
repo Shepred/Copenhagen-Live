@@ -227,7 +227,7 @@ class BookingController extends Controller
         $user = Session::get('user');
         $userId = $user->id;
 
-        if($userId != 1300001) {
+        if($userId != 1224384) {
             return redirect('/booking');
         }
         else {
